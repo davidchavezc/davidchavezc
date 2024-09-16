@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 char name[32]; 
 int area;
 float horas, tarifa, extra;
@@ -15,7 +16,12 @@ void recibo() {
 			}
 }
 // La funcion recibo se encarga de hacer los calculos e imprimir los valores al cliente.
-
+void valid(){
+	if (horas < 0) {
+		printf("Error. Las horas trabajadas no pueden ser un valor negativo. \nIntente nuevamente. \n");
+		exit(1);
+	}
+}
 int main() {
 	printf("Ingrese su nombre: ");
 	fgets(name, 32, stdin);
@@ -23,6 +29,7 @@ int main() {
 	strtok(name, "\n");
 	printf("Ingrese sus horas laboradas: ");
 	scanf("%f", &horas);
+	valid();
 	printf("-Lista de areas- \n 1. Recursos Humanos \n 2. Produccion \n 3. Sistemas \n Ingrese su area: ");
 	scanf("%d",&area);
 	// imprimimos el texto en varias lineas para simular una lista de elecciones, se toma el valor
