@@ -1,13 +1,25 @@
 #include <stdio.h>
-int main () {
-	char name[32]; 
-	int area;
-	float horas, base, extra;
-	// establecemos variables, area es una lista desplegable pues podemos usar print, pero como
-	// ejecutaremos operaciones con los demÃ¡s nÃºmeros pues debemos guardarlos como float
+char name[32]; 
+int area;
+float horas, tarifa, extra;
+// declaramos variables, area es una lista desplegable pues podemos usar print, pero como
+// ejecutaremos operaciones con los demás números pues debemos guardarlos como float
+
+void recibo() {
+	if (horas>40) {
+				extra = (horas-40);
+				printf("Estimado %s, su pago de nomina corresponde a $%.2f pesos. ", name, tarifa * 40 + extra * tarifa * 2);
+			}
+			else {
+				printf("Estimado %s, su pago de nomina corresponde a $%.2f pesos. ", name, tarifa * horas);
+			}
+}
+// La funcion recibo se encarga de hacer los calculos e imprimir los valores al cliente.
+
+int main() {
 	printf("Ingrese su nombre: ");
 	fgets(name, 32, stdin);
-	// usamos fgets, sus argumentos son (nombre de var, tamaÃ±o, y si es in/out)
+	// usamos fgets, sus argumentos son (nombre de var, tamaño, y si es in/out)
 	strtok(name, "\n");
 	printf("Ingrese sus horas laboradas: ");
 	scanf("%f", &horas);
@@ -17,34 +29,16 @@ int main () {
 	// del area como un int y usamos un switch statement para hacer el calculo
 	switch (area) {
 		case 1:
-			if (horas>40) {
-				base = 23.25 * 40.0;
-				extra = (horas-40) * 46.50;
-				printf("Estimado %s, su pago de nomina corresponde a $%.2f pesos. ", name, base + extra);
-			}
-			else {
-				printf("Estimado %s, su pago de nomina corresponde a $%.2f pesos. ", name, horas*23.25);
-			}
+				tarifa = 23.25;
+				recibo();
 			break;
 		case 2:
-			if (horas>40) {
-				base = 25.20 * 40.0;
-				extra = (horas-40) * 50.40;
-				printf("Estimado %s, su pago de nomina corresponde a $%.2f pesos. ", name, base + extra);
-			}
-			else {
-				printf("Estimado %s, su pago de nomina corresponde a $%.2f pesos. ", name, horas*25.20);
-			}
+				tarifa = 25.20;
+				recibo();
 			break;
 		case 3:
-			if (horas>40) {
-				base = 24.30 * 40.0;
-				extra = (horas-40) * 48.60;
-				printf("Estimado %s, su pago de nomina corresponde a $%.2f pesos. ", name, base + extra);
-			}
-			else {
-				printf("Estimado %s, su pago de nomina corresponde a $%.2f pesos. ", name, horas*24.30);
-			}
+				tarifa = 24.30;
+				recibo();
 			break;
 		default:
 			printf("Error, esa area no es valida. Intente de nuevo, por favor.");
