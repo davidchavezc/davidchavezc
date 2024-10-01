@@ -1,0 +1,46 @@
+<head>
+    <title>Practica con botones</title>
+</head>
+<body>
+<button class="request_button" onclick=window.location.href="https://uber.com">
+    Request now
+  </button>
+  <button class="add_to_cart_button">
+    Add to Cart
+  </button>
+</body>
+<style>
+  .request_button{
+    background-color: black;
+    color: white;
+    height: 42px;
+    width: 135px;
+    border-style: none;
+    cursor: pointer;
+    transition: opacity 0.30s, color 0.30s, background-color 0.30s;
+  }
+  .request_button:hover{
+    opacity: 0.8;
+    box-shadow: 5 5 0 rgba(0, 0, 0, 0.15);
+  }
+  .request_button:active{
+    border-style: solid;
+    border-color: black;
+    background-color: white;
+    color: black;
+    opacity: 0.6;
+  }
+  .add_to_cart_button{
+    background-color: rgb(255, 216, 20);
+    color: black;
+    border-style: none;
+    border-radius: 24px;
+    width: 200px;
+    height: 40px;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  .add_to_cart_button:hover{
+    background-color: rgb(230, 193, 8);
+  }
+</style>
