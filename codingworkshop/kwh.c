@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <string.h>
 int zona;
 float consumo, tarifa;
 char name[20];
