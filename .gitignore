@@ -6,6 +6,7 @@
 # Directories #
 API_Parser_Output
 Obj
+.venv
 
 # Packages #
 *.gz
