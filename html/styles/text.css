@@ -1,0 +1,26 @@
+p{
+    font-family: IBM Plex Sans, Geneva, Tahoma, sans-serif;
+}
+.course_title{
+    font-weight: bold;
+    line-height: 5px;
+}
+.course_description{
+    font-size: 12px;
+    width: 220px;
+    margin-top: 15px;
+    line-height: 15px;
+}
+.course_detail{
+    font-size: 12px;
+    line-height: 2px;
+    color: rgb(107, 110, 114);
+}
+.underline{
+    font-weight: bold;
+}
+.underline:hover{
+    cursor:pointer;
+    text-decoration: underline;
+
+}

@@ -1,0 +1,23 @@
+.starting_button{
+    color: white;
+    border-radius: 3px;
+    background-color: rgb(18, 132, 18);
+    border-style: none;
+    font-size: 13px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 4px;
+    box-shadow: 0.5px 0.5px 1px rgba(0, 0, 0, 1);
+    transition: color 0.3s, box-shadow 0.3s, font-size 0.3s, opacity 0.3s;
+}
+.starting_button:hover{
+    cursor: pointer;
+    background-color: rgb(17, 113, 17);
+    font-size: 14px;
+}
+.starting_button:active{
+    box-shadow: 0 0 0 rgb(0, 0, 0);
+    opacity: 0.70;
+}
