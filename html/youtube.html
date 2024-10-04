@@ -2,19 +2,53 @@
 <html>
     <head>
         <title>YouTube</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     </head>
     <body>
-        <img src="./thumbnail/thumbnail1.webp" class="thumbnail">
-        <input type="text" placeholder="Search for something" class="search_bar">
+        <div class="video_preview">
+            <img src="./thumbnail/thumbnail1.webp" class="thumbnail">
+            <div>
+                <img src="/html/pfp/channels4_profile.jpg" class="author_profile_pic">
+            </div>
+            <div class="video_details">     
+                <p class="video_title">Por qué nunca vas a agarrar jale como programador</p>
+                <p class="author">DotDager</p>            
+                <p class="stats">Hace un momento &#183; 21k visitas</p>
+            </div>
+        </div>
+        <div class="video_preview">
+            <img src="./thumbnail/thumbnail2.webp" class="thumbnail">
+            <div>
+                <img src="/html/pfp/channels4_profile (1).jpg" class="author_profile_pic">
+            </div>
+            <p class="video_title">Por qué me mama Apple</p>
+            <p class="author">Woshingo</p>            
+            <p class="stats">Hace 7 meses &#183; 328k visitas</p>
+        </div>
     </body>
 </html>
 
 <style>
+    p{
+        font-family: 'Roboto';
+    }
     .thumbnail{
         width: 300px;
+        display: block  ;
     }
-    .search_bar{
-        font-size: 20px;
-        font-family: 'Times New Roman', Times, serif;
+    .video_preview{
+        display: inline-block;
+        width: 300px;
+        margin-right: 20px;
+    }
+    .author_profile_pic{
+        width: 24px;
+        display: inline-block;
+        vertical-align: top;
+    }
+    .video_details{
+        display: inline-block;
     }
 </style>
