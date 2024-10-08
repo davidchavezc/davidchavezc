@@ -1,6 +1,5 @@
 #include <stdio.h>
 int mes, dia;
-//Determinar el signo del zodiaco
 int main() {
 	printf("--Lista de meses-- \n1. Enero\n2. Febrero\n3. Marzo\n4. Abril\n5. Mayo\n6. Junio\n7. Julio\n");
 	printf("8. Agosto\n9. Septiembre \n10. Octubre\n11. Noviembre\n12. Diciembre\nDigite su mes de nacimiento: ");
