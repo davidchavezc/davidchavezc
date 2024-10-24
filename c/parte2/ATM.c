@@ -2,10 +2,9 @@
 int main()
 {
 	float saldo, movimiento;
-	int seleccion=1;
-	printf("\n--------- CAJERO AUTOMATICO FIME -------\n");	
+	int seleccion;
 	printf("¡Buenos días! Haga un deposito inicial para comenzar: $"); scanf("%f",&saldo);
-	while (seleccion!=4)
+	do
 	{
 		printf("\n--------- CAJERO AUTOMATICO FIME -------\n");
 		printf("¿Haremos algo más? \n");
@@ -39,6 +38,7 @@ int main()
 
 		}
 	}
+	while(seleccion!=4);
 	return 0;
 }
 
