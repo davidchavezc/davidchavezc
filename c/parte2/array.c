@@ -17,9 +17,17 @@ void bubble_sort(int num_list[],int size)
 }
 int main()
 {
-	int num_list[]={5,1,3,9,7,11,21,17};
-	int size = sizeof(num_list)/sizeof(num_list[0]);
+	int size=5;
+	int num_list[size];
+	for(int j = 0; size > j; j++)
+	{
+		printf("Ingrese el valor de la %d posición: ",j+1); scanf("%d",&num_list[j]);
+
+	}
+	// int size = sizeof(num_list)/sizeof(num_list[0]);
+	// no es necesario agregar esto pues desde el inicio sabemos el tamaño del array
 	bubble_sort(num_list, size);
+	printf("El array ordenado es: ");
 	for (int i = 0; i < size; i++)
 	{
 		printf("%d ",num_list[i]);
