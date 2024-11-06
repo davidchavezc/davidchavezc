@@ -21,4 +21,14 @@ int main()
 		}
 		printf("\n");
 	}
+	int suma=0;
+	for (int i=0;i<tamano;i++)
+	{
+		for(int j=0;j<tamano;j++)
+		{
+			suma+=array[i][j];
+		}
+	}
+	printf("La suma de los elementos de la matriz es: %d\n", suma);
+	return 0;
 }
