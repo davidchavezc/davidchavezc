@@ -4,4 +4,4 @@
 - 😄 Mis pronombres son he/him
 - ⚡ Me gustan mucho los cómics y las péliculas
 
-I use arch and neo-vim btw
+WSL supremacy
