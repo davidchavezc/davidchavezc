@@ -8,7 +8,7 @@ int main()
 	{
 		for(int j=0;j<tamano;j++)
 		{
-			printf("\nIngrese la posición [%d][%d] de la matriz: ", i, j);
+			printf("Ingrese la posición [%d][%d] de la matriz: ", i+1, j+1);
 			scanf("%d", &array[i][j]); 
 		}
 	}
@@ -46,6 +46,23 @@ int main()
 			}
 		}
 		printf("\n");
+	}
+	int find, found=0;
+	printf("\nIndique un número para encontrarlo dentro de la matriz: "); scanf("%d", &find);
+	for(int i=0;i<tamano;i++)
+	{
+		for(int j=0;j<tamano;j++)
+		{
+			if(array[i][j]==find)
+			{
+				printf("Valor %d encontrado en la posición [%d][%d]\n",find,i+1,j+1);
+				found=1;
+			}
+		}
+	}
+	if(found!=1)
+	{
+		printf("El valor %d no se encuentra dentro de la matriz.",find);
 	}
 	printf("\n");
 	return 0;
