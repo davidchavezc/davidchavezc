@@ -6,6 +6,7 @@
 # Directories #
 API_Parser_Output
 Obj
+.vscode
 .venv
 
 # Packages #
