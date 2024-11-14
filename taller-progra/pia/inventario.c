@@ -40,7 +40,7 @@ void registrar_venta(int size, char articulos[size][max], int stock[])
 			{
 				found=0;
 				int cantidad_venta;
-				printf("Existen %d %s en existencia. \nIndique cuántos venderá: ",stock[i],articulos[i]);
+				printf("Hay %d %s en existencia. \nIndique cuántos venderá: ",stock[i],articulos[i]);
 				scanf("%d", &cantidad_venta);
 				int valid = venta(stock[i],cantidad_venta);
 				// printf("%d", valid);
